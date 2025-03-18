@@ -49,3 +49,38 @@ input.buscar:hover{
   margin-left: 650px;
 
 }
+
+/*grid*/
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste dinámico */
+  gap: 20px; /* Espaciado entre tarjetas */
+  padding: 20px;
+}
+
+.movie-card {
+  cursor: pointer;
+  text-align: center;
+  background: #1c1c1c;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05); /* Efecto de zoom */
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Ajuste para imágenes */
+  border-radius: 10px;
+}
+
+.movie-card h4 {
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+}
+/*grid*/

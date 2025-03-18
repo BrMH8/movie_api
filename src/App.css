@@ -40,4 +40,5 @@ input.buscar{
 input.buscar:hover{
   box-shadow: inset 400px 0 0 0 #fd151568;
   color: rgb(241, 240, 240);
+  background-color: #0d1015;
 }

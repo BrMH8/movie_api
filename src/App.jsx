@@ -106,7 +106,7 @@ function App() {
     <div>
       <h2 className="tittle">Trailer Popular Movies</h2>
 
-      <form className="container mb-4" onSubmit={(e) => e.preventDefault()}>
+      <form className="form" onSubmit={(e) => e.preventDefault()}>
         <input
           className='buscar'
           type="text"

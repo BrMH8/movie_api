@@ -108,6 +108,7 @@ function App() {
 
       <form className="container mb-4" onSubmit={(e) => e.preventDefault()}>
         <input
+          className='buscar'
           type="text"
           placeholder="search"
           value={searchKey}

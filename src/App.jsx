@@ -104,7 +104,7 @@ function App() {
 
   return (
     <div>
-      <h2 className="text-center mt-5 mb-5">Trailer Popular Movies</h2>
+      <h2 className="tittle">Trailer Popular Movies</h2>
 
       <form className="container mb-4" onSubmit={(e) => e.preventDefault()}>
         <input

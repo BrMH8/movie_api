@@ -76,22 +76,7 @@ function App() {
     setSearchKey(value);
   };
 
-  const searchMovies = (e) => {
-    if (e) {
-      e.preventDefault();
-    }
-
-    if (!searchKey.trim()) {
-      Swal.fire({
-        title: "Error!",
-        text: "No puedes realizar búsquedas vacías.",
-        icon: "warning",
-      });
-      return;
-    }
-    fetchMovies(searchKey);
-  };
-
+  
   useEffect(() => {
     if (searchKey.trim() || movies.length === 0) {
       fetchMovies(searchKey);

@@ -103,9 +103,9 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <h2 className="tittle">Trailer Popular Movies</h2>
-
+    <div className='uno'>
+      <h2 className="tittle">Popular Movies</h2>
+      <div className='buscador'>
       <form className="form" onSubmit={(e) => e.preventDefault()}>
         <input
           className='buscar'
@@ -116,7 +116,7 @@ function App() {
           onChange={(e) => setSearchKey(e.target.value)}
         />
       </form>
-
+      </div>
       <div>
         <main>
           {movie ? (

@@ -21,7 +21,7 @@
 }
 
 .form{
-  margin-left: 600px;
+  margin-left: 580px;
 }
 
 input.buscar{
@@ -73,6 +73,7 @@ input.buscar:hover{
 
 .movie-card:hover {
   transform: scale(1.05); /* Efecto de zoom */
+  background-color: #f0f1f332;
 }
 
 .movie-card img {
@@ -87,4 +88,11 @@ input.buscar:hover{
   font-size: 16px;
   margin-top: 10px;
 }
+
 /*grid*/
+
+.uno{
+  width: auto;
+  height: auto;
+  align-items: center;
+}

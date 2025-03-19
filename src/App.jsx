@@ -194,11 +194,23 @@ function App() {
       </div>
 
       <div className="movie-grid">
-        {movies.map((movie) => (
-          <div key={movie.id} className="movie-card" onClick={() => selectMovie(movie)}>
-            <img src={`${URL_IMAGE + movie.poster_path}`} alt={movie.title} />
-        <h4>{movie.title}</h4>
-      </div>
+  {movies.map((movie) => (
+    <div key={movie.id} className="movie-card" onClick={() => selectMovie(movie)}>
+      <img src={`${URL_IMAGE + movie.poster_path}`} alt={movie.title} />
+      <h4>{movie.title}</h4>
+
+      {/* Descripción */}
+      <p className="description">
+        {movie.overview ? movie.overview.substring(0, 100) + "..." : "Sin descripción disponible"}
+      </p>
+
+      {/* Reparto (si está disponible) */}
+      {movie.cast && (
+        <p className="cast">
+          <strong>Reparto:</strong> {movie.cast}
+        </p>
+      )}
+    </div>
   ))}
 </div>
 

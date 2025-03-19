@@ -96,3 +96,7 @@ input.buscar:hover{
   height: auto;
   align-items: center;
 }
+
+.titulo-imagen {
+  margin-left: 500px;
+}

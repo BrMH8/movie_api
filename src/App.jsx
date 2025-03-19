@@ -126,7 +126,7 @@ function App() {
 
   return (
     <div className='uno'>
-      <h2 className="tittle">Popular Movies</h2>
+     <img className="titulo-imagen" src=".\src\assets\logo.png" alt="Popular Movies" />
       <div className='buscador'>
       <form className="form" onSubmit={(e) => e.preventDefault()}>
         <input

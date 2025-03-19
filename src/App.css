@@ -1,12 +1,12 @@
-.viewtrailer{
+.viewtrailer {
   min-height: 700px;
   background-size: cover;
-  background-position:center;
-
+  background-position: center;
   display: flex;
   align-items: flex-end;
 }
-.boton{
+
+.boton {
   background-color: #0F1014;
   color: white;
   outline: none;
@@ -15,16 +15,17 @@
   cursor: pointer;
   margin-bottom: 10px;
 }
-.reproductor{
-  width: 1450px;
+
+.reproductor {
+  width: 100%;
   height: 600px;
 }
 
-.form{
+.form {
   margin-left: 580px;
 }
 
-input.buscar{
+input.buscar {
   color: #ffffff;
   background-color: #0d1015;
   border: 2px solid rgb(19, 13, 16);
@@ -42,23 +43,23 @@ input.buscar{
   transition: ease-out 0.4s;
   margin-left: 620px;
 }
-input.buscar:hover{
+
+input.buscar:hover {
   box-shadow: inset 400px 0 0 0 #fd151568;
   color: rgb(241, 240, 240);
   background-color: #0d1015;
 }
 
-.tittle{
+.tittle {
   color: #f0f1f3;
   margin-left: 650px;
-
 }
 
 /*grid*/
 .movie-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste dinámico */
-  gap: 20px; /* Espaciado entre tarjetas */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 20px; 
   padding: 20px;
 }
 
@@ -72,14 +73,14 @@ input.buscar:hover{
 }
 
 .movie-card:hover {
-  transform: scale(1.05); /* Efecto de zoom */
+  transform: scale(1.05); 
   background-color: #f0f1f332;
 }
 
 .movie-card img {
   width: 100%;
   height: 300px;
-  object-fit: cover; /* Ajuste para imágenes */
+  object-fit: cover; 
   border-radius: 10px;
 }
 
@@ -91,7 +92,7 @@ input.buscar:hover{
 
 /*grid*/
 
-.uno{
+.uno {
   width: auto;
   height: auto;
   align-items: center;
@@ -99,4 +100,79 @@ input.buscar:hover{
 
 .titulo-imagen {
   margin-left: 500px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1200px) {
+  .form {
+    margin-left: 300px;
+  }
+
+  .input.buscar {
+    margin-left: 350px;
+  }
+
+  .tittle {
+    margin-left: 300px;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .input.buscar {
+    margin-left: 0;
+    width: 80%;
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+
+  .tittle {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  }
+
+  .reproductor {
+    height: 400px; 
+  }
+
+  .movie-card img {
+    height: 250px; 
+  }
+
+  .movie-card h4 {
+    font-size: 14px; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reproductor {
+    height: 350px; 
+  }
+
+  .movie-card img {
+    height: 200px; 
+  }
+
+  .input.buscar {
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .movie-card h4 {
+    font-size: 12px; 
+  }
 }

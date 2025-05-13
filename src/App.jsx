@@ -130,7 +130,7 @@ function App() {
       <div className='buscador'>
       <form className="form" onSubmit={(e) => e.preventDefault()}>
         <input
-          className='buscar'
+          className='buscar xd'
           type="text"
           placeholder="search"
           value={searchKey}

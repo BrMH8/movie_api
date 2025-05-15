@@ -136,6 +136,7 @@ function App() {
           value={searchKey}
           onKeyDown={handleSearchChange}
           onChange={(e) => setSearchKey(e.target.value)}
+          aria-label="Buscar películas" // Etiqueta ARIA para buscador de peliculas
         />
       </form>
       </div>
@@ -193,11 +194,11 @@ function App() {
         </main>
       </div>
 
-      <div className="movie-grid">
+      <div className="movie-grid" >
   {movies.map((movie) => (
     <div key={movie.id} className="movie-card" onClick={() => selectMovie(movie)}>
       <img src={`${URL_IMAGE + movie.poster_path}`} alt={movie.title} />
-      <h4>{movie.title}</h4>
+      <h4>{movie.title} </h4> {/* Etiqueta ARIA indica el titulo */}
 
       {/* Descripción */}
       <p className="description">
